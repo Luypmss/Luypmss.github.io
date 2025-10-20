@@ -6,25 +6,27 @@
   <title>準備中</title>
   <style>
     body {
-      height: 100vh;
-      margin: 0;
       display: flex;
-      align-items: center;
+      height: 100vh;
       justify-content: center;
-      font-family: "Noto Sans JP", sans-serif;
-      background-color: #fafafa;
-      color: #555;
-      font-size: 2.2rem;
-      animation: fade 2s ease-in-out infinite alternate;
+      align-items: center;
+      background: #fefefe;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #666;
+      font-size: 2rem;
     }
-
-    @keyframes fade {
-      from { opacity: 0.3; transform: translateY(2px); }
-      to { opacity: 1; transform: translateY(-2px); }
+    span {
+      display: inline-block;
+      animation: float 2s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  準備中
+  <span>準備中</span>
 </body>
 </html>
